@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Semantic Search Engine (FineSearch)
 
-## Getting Started
+Sebuah mesin pencari semantik canggih yang dibangun menggunakan **Next.js 14**, **Vector Upstash**, **Drizzle**, **Postgres**, dan **OpenAI API**. Proyek ini memanfaatkan teknologi web modern untuk memberikan kemampuan pencarian yang cepat, akurat, dan cerdas.
 
-First, run the development server:
+## 🚀 Fitur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Pencarian Semantik**: Didukung oleh pencarian berbasis vektor menggunakan Upstash, dengan bantuan OpenAI API untuk meningkatkan akurasi semantik.
+- **Frontend Modern**: Dibangun dengan Next.js 14 untuk performa dan skalabilitas optimal.
+- **Lapisan Database**: Memanfaatkan Drizzle untuk query database yang aman dan Postgres sebagai database relasional yang andal.
+- **Pembaruan Real-time**: Mengelola dan men-query dataset besar secara efisien dalam waktu nyata.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **[Next.js 14](https://nextjs.org/)**: Framework React yang kuat dengan fitur seperti server-side rendering dan API routes.
+- **[Vector Upstash](https://upstash.com/)**: Mesin pencari berbasis vektor yang mendukung pencarian semantik menggunakan embeddings.
+- **[Drizzle](https://drizzle.team/)**: ORM ringan untuk Node.js yang menyediakan query SQL yang aman.
+- **[Neon Tech + Postgres](https://www.postgresql.org/)**: Database cloud native relasional serverless.
+- **[OpenAI API](https://platform.openai.com/)**: Digunakan untuk memperkaya indeks pencarian semantik pada Vector Upstash.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## 📦 Instalasi
 
-## Learn More
+1. **Kloning repository**:
+   ```bash
+   git clone https://github.com/MrFatra/finesearch.git
+   cd finesearch
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Instal dependensi**:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Atur variabel lingkungan**:
+   Buat file `.env` di root proyek.
+   Lihat referensi pada `.env.example`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. **Jalankan server pengembangan**:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+   Buka [http://localhost:3000](http://localhost:3000) di browser untuk melihat aplikasi.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📈 Penggunaan
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Antarmuka Pencarian**: Masukkan kueri di bilah pencarian, dan mesin akan mengembalikan hasil yang terkait secara semantik dengan bantuan OpenAI API.
+
+## 🛡️ Keamanan
+
+- Pastikan untuk mengamankan variabel lingkungan dan kredensial database serta API key.
+- Perbarui dependensi secara berkala untuk mencegah kerentanan.
